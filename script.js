@@ -24,13 +24,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             },
             color: {
-                value: '#9100f8'
+                value: '#7fff00'
             },
             shape: {
                 type: 'circle',
                 stroke: {
                     width: 1,
-                    color: '#9100f8'
+                    color: '#7fff00'
                 },
                 polygon: {
                     nb_sides: 5

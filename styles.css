@@ -15,11 +15,11 @@ body {
 /* Header Styles */
 header {
     padding: 10px;
-    background: rgba(162, 0, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background: rgba(0, 255, 81, 0);
+    box-shadow: 0 4px 30px rgba(85, 255, 0, 0.129);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(162, 0, 255, 0.2);
+ 
         color: #fff;
     position: fixed;
     width: 100%;
@@ -43,17 +43,14 @@ nav {
   
 }
 
-.logo span{
-
-    color:#9100f8;
-    text-shadow: none;
-
-}
 
 .logo img{
 
-   width: 30px;
-   height: 30px;
+   width: 80px;
+   height: 40px;
+   overflow: hidden;
+   object-fit: cover;
+ 
    transform: translate(4px,-4px);
 
 }
@@ -166,7 +163,7 @@ nav {
 /* Gradient text for hero title */
 .hero-text h1 span{
     font-size: 2em;
-    background: linear-gradient(45deg, #4b0082, #bb00ff, #4b0082, #bb00ff);
+    background: linear-gradient(45deg, #4a8200, #d0ff00, #238200, #66ff00);
     -webkit-background-clip: text;
     color: transparent;
     background-clip: text;
@@ -185,7 +182,7 @@ nav {
     margin-top: 20px;
     padding: 10px 20px;
     /* From https://css.glass */
-background: rgba(162, 0, 255, 0.2);
+    background: rgba(114, 255, 79, 0.215);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
@@ -425,26 +422,35 @@ border: 1px solid rgba(225, 225, 255, 0.2);
         flex-direction: column;
         gap: 30px;
         position: absolute;
-        top: 70px;
-        right: 20px;
-        background: #000;
+        top: 50px;
+        right: 0px;
+        left: 0px;
+     
         padding: 20px;
         align-items: center;
-        border-radius: 10px;
+        border-radius: 0px;
        padding-top: 30px;
        padding-bottom: 30px;
        padding-right: 10px;
        padding-left: 10px;
-       background:#4b0082;
-       border: 1px solid rgb(255, 255, 255);
+       background: rgb(0, 0, 0);
+       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+       backdrop-filter: blur(5px);
+       -webkit-backdrop-filter: blur(5px);
+       border: 1px solid rgba(77, 255, 0, 0.529);
            color: #fff;
+    
+       width: 100%;
+       z-index: 1000;
+   
     }
 
     .nav-links a {
-        background: rgba(255, 255, 255, 0.2);
+ 
         padding: 10px;
+        
         border-radius: 5px;
-        border: 1px solid rgba(225, 225, 255);
+ 
 }
 
     }
@@ -452,9 +458,10 @@ border: 1px solid rgba(225, 225, 255, 0.2);
     .nav-links a:hover {
         background: rgba(255, 255, 255);
         color:#4b0082;
-        border: 1px solid rgba(255, 255, 255, 0.201);
-        padding: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 10px 10px;
         border-radius: 5px;
+     
 
     }
 
