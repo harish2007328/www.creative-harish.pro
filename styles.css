@@ -31,6 +31,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: rgb(166, 255, 0);
 }
 
 .logo {
@@ -71,6 +72,7 @@ nav {
 
 .hamburger.active .line:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
+    background: #ff0000;
 }
 
 .hamburger.active .line:nth-child(2) {
@@ -79,6 +81,8 @@ nav {
 
 .hamburger.active .line:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
+    background: #ff0000;
+
 }
 
 .nav-links {
@@ -89,7 +93,7 @@ nav {
 }
 
 .nav-links a {
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -100,7 +104,6 @@ nav {
     align-items: center;
     height: 100vh;
     padding: 0px;
-
 
 }
 
@@ -142,7 +145,7 @@ nav {
 
 .hero-photo img:hover {
     transform: scale(1.2);
-    box-shadow: 0 0 25px 10px rgba(75, 0, 130, 0.7);
+    box-shadow: 0 0 25px 10px rgba(6, 191, 0, 0.419);
 }
 
 .hero-text {
@@ -162,7 +165,7 @@ nav {
 
 /* Gradient text for hero title */
 .hero-text h1 span{
-    font-size: 2em;
+    font-size: 1.2em;
     background: linear-gradient(45deg, #4a8200, #d0ff00, #238200, #66ff00);
     -webkit-background-clip: text;
     color: transparent;
@@ -181,29 +184,39 @@ nav {
 .cta-button {
     margin-top: 20px;
     padding: 10px 20px;
-    /* From https://css.glass */
     background: rgba(114, 255, 79, 0.215);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(162, 0, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(162, 0, 255, 0.2);
     color: #fff;
-
     cursor: pointer;
     transition: transform 0.3s ease;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
+.sm a{
+    color: #000000;
+    background-color: #66ff00;
+    display: inline-block;
+    ma
+
+}
 .cta-button:hover {
     transform: scale(1.2);
     background: rgba(225, 225, 255, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(225, 225, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(225, 225, 255, 0.2);
 }
-/* Floating animation */
+
 @keyframes float {
     0%, 100% {
         transform: translateY(0);
@@ -215,30 +228,44 @@ border: 1px solid rgba(225, 225, 255, 0.2);
 
 /* About Section Styles */
 #about {
-    padding: 50px;
+    padding: 20px;
+    align-items: center;
+    
 
 }
+.logo-abt img{
+    margin-top: 50px;
+    width: 70%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+ }
 #about h2 {
     padding-bottom: 15px;
 }
 
 .about-card {
-    background: #4b0082;
-    color: #d29df8;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: #99ff00;
+    color: #000000;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.3s ease;
-    border: 5px solid#d29df8;
+    border: 5px solid#ffffff;
 
 }
 
 .about-card:hover {
     transform: scale(1.05);
-    background: #d29df8;
-    color:#4b0082;
-    border: 5px solid #4b0082;
-    box-shadow: 0 0 25px 10px rgba(75, 0, 130, 0.7);
+    background: #000000;
+    color:#99ff00;
+    border: 5px solid #ffffff;
+    box-shadow: 0 0 25px 10px #f4ff19;
 }
 
 /* Services Section Styles */
@@ -438,7 +465,7 @@ border: 1px solid rgba(225, 225, 255, 0.2);
        backdrop-filter: blur(5px);
        -webkit-backdrop-filter: blur(5px);
        border: 1px solid rgba(77, 255, 0, 0.529);
-           color: #fff;
+           color: rgba(77, 255, 0, 0.529);
     
        width: 100%;
        z-index: 1000;
@@ -448,7 +475,7 @@ border: 1px solid rgba(225, 225, 255, 0.2);
     .nav-links a {
  
         padding: 10px;
-        
+        color: rgb(166, 255, 0);
         border-radius: 5px;
  
 }
@@ -456,8 +483,8 @@ border: 1px solid rgba(225, 225, 255, 0.2);
     }
 
     .nav-links a:hover {
-        background: rgba(255, 255, 255);
-        color:#4b0082;
+        background:  rgb(166, 255, 0);
+        color:#000000;
         border: 1px solid rgba(255, 255, 255, 0.2);
         padding: 10px 10px;
         border-radius: 5px;
@@ -470,6 +497,7 @@ border: 1px solid rgba(225, 225, 255, 0.2);
     }
 
     .hero-content {
+        display: flex;
         flex-direction: column;
     }
 
